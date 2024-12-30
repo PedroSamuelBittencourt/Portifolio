@@ -1,7 +1,7 @@
-*{
-    /* border: red solid 1px; */
+/* *{
+    border: red solid 1px; 
 
-}
+} */
 html {
     font-size: 15px; /* 1rem será igual a 16px */
     
@@ -124,9 +124,9 @@ body{
    
 }
 .card {
-    position: relative;      /* Para posicionar elementos internos */
-    transition: transform 0.3s; /* Suaviza a transformação */
-    overflow: hidden;       /* Para esconder partes da imagem ao crescer */
+    position: relative;      
+    transition: transform 0.3s;
+    overflow: hidden; /* Para esconder partes da imagem ao crescer */
 }
 
 .card img {
@@ -170,6 +170,7 @@ body{
 
 #titulo-projetos h1{
     color: #212529 !important;
+   
 }
 #titulo-projetos{
     width: 100%;
@@ -177,10 +178,12 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 0%;
+    height: 100px;
+    background-color: #f2f2f2;
 }
 
 /*Conhecimentos*/
- 
+
 #conhecimento{
     background-color: #212529;
     width: 100%;
@@ -281,25 +284,30 @@ footer p {
 
 
 @media (min-width: 588px) and (max-width: 1128px) {
+   
     #cards-conhecimento {
         display: grid !important;
-        grid-template-columns: repeat(2, 2fr); 
+        grid-template-columns: repeat(2, 1fr) !important; 
         gap: 16px !important;
     }
     #cards-conhecimento .card{
         margin: auto;
     }
+   
     #cards-projetos {
-        display: grid !important;
-        grid-template-columns: repeat(2, 2fr) ; 
-        gap: 16px !important; 
+        display: flex !important; 
+        flex-direction: row !important; 
+        width: 100% !important;
     }
-    #cards-projetos .card{
-        margin: auto;
-    }
+
     #cards1, #cards2 {
-        display: flex;
+        display: flex !important; 
         flex-direction: column !important;
+        flex: 1 !important;
+    }
+
+    .card {
+        margin: 0 auto; /* Centraliza os cards dentro das células */
     }
     .cards-pares:hover{
         margin-top: 80px; 
