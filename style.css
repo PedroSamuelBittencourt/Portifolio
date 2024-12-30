@@ -1,0 +1,349 @@
+*{
+    /* border: red solid 1px; */
+
+}
+html {
+    font-size: 15px; /* 1rem será igual a 16px */
+    
+}
+#body{
+    background-color: #212529;
+    padding-top: 60px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+  
+}
+.navbar{
+    position: fixed !important; /* Fixa a navbar no topo */
+    top: 0 !important; /* Alinha ao topo da página */
+    z-index: 1000 !important;
+    width: 100%;
+}
+.navbar-nav .link-nav{
+    font-size: 1.2rem;
+    transition: .3s;
+    color: white;
+}
+.navbar-nav .link-nav:hover{
+    color: #A05CED !important; 
+} 
+#navbarNavAltMarkup{
+    width: 60%;
+    margin-left: 10%;
+}
+#container-links-nav{
+    display: flex;
+    flex: 1;
+}  
+#container-links-nav a{
+    flex: 1;
+}  
+.navbar{
+    border-bottom: 1px solid white ;
+}
+
+#logo{
+    margin-left: 3%;
+}
+#container-links-nav a{
+    flex: 1;
+}
+
+#section-content{
+    height: 500px;
+    justify-content: center;
+    display: flex;
+    border-bottom: 3px white;
+}
+#textos-apresentacao{
+    padding: 3%;
+    color: white;
+    height: 100%;
+
+}
+#textos-apresentacao p{
+  margin-top: auto;
+}
+#conteudo-texto-lateral{
+    align-items: center;
+    margin-top: 15%;
+    color: white;
+}
+
+#informacoes{
+    height: 100%; 
+    align-items: center; 
+    justify-content: center;
+    
+} 
+#section-projetos h1{
+    color: white!important;
+    transition: .3s;
+}
+#section-projetos h1:hover{
+    color:  #1473a7!important;
+}
+#section-projetos{
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 5em;
+}
+#cards1 .card, #cards2 .card{
+    transition: all 0.7s ease-out; 
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  
+}
+#cards1 .card p{
+   display: block;
+   position: absolute;
+   top: 20em;
+   bottom: 0.2em;
+   width: 100%;
+   font-size: 1em;
+   font-weight: bolder;
+}
+#cards2 .card p{
+    display: block;
+    position: absolute;
+    top: 19em;
+    bottom: 0.2em;
+    width: 100%;
+    font-size: 1em;
+    font-weight: bolder;
+ }
+#cards1 .card img, #cards2 .card img{
+    width: 18rem !important;
+}
+#cards-projetos{
+    align-items: center;
+    padding-top: 40px;
+   
+}
+.card {
+    position: relative;      /* Para posicionar elementos internos */
+    transition: transform 0.3s; /* Suaviza a transformação */
+    overflow: hidden;       /* Para esconder partes da imagem ao crescer */
+}
+
+.card img {
+    transition: transform 0.3s; /* Suaviza o crescimento da imagem */
+}
+
+.card:hover img {
+    transform: scale(1.1);   /* Aumenta a imagem no hover */
+}
+
+.card-body {
+    text-align: center;  
+}
+
+.card h3 {
+    transition: opacity 0.3s; 
+}
+
+.card p {
+    position: absolute;       
+    left: 50%;             
+    transform: translateX(-50%); 
+    bottom: 10%;             
+    opacity: 0;              
+    visibility: hidden;     
+    transition: opacity 0.3s, visibility 0.3s; 
+    width: 100%;
+}
+
+.card:hover h3 {
+    opacity: 0;              
+}
+
+.card:hover p {
+    opacity: 1;             
+    visibility: visible;    
+}
+.card:hover p {
+    animation: fadeIn 0.3s; /
+}
+
+#titulo-projetos h1{
+    color: #212529 !important;
+}
+#titulo-projetos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+/*Conhecimentos*/
+ 
+#conhecimento{
+    background-color: #212529;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 25px;
+} 
+
+#titulo-conhecimento{
+    color: #f2f2f2;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+#cards-conhecimento{
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly;
+     padding-bottom: 7em;
+     padding-top: 7em;
+}
+#cards-conhecimentos .card p{
+    width: 100%;
+} 
+#cards-conhecimentos .card-body{
+    width: 100%;
+} 
+#cards-conhecimento .card{
+    color: #f2f2f2;
+    background-color: #212529;
+    border: 1px solid #f2f2f2;
+    width: 18em !important;
+}
+
+.cards-impares{
+    margin-bottom: 80px;
+    height: 100%;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+.cards-pares{
+    margin-top: 80px;
+    height: 100%;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.cards-pares:hover{
+    margin-top: 0px; 
+    border: 1px solid rgba(20, 115, 167, 0.5);
+    box-shadow: 0 4px 15px rgba(20, 115, 167, 0.5);
+}
+.cards-impares:hover {
+    margin-bottom: 0px;
+    border: 1px solid #FFD044;
+    box-shadow: 0 4px 15px #FFD044;
+}
+
+
+/* footer */
+footer {
+    background-color: #282c34; 
+    color: #f2f2f2; 
+    padding: 20px; 
+    text-align: center; 
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal; 
+}
+
+footer p {
+    margin-bottom: 15px; 
+    font-size: 1rem; 
+}
+
+.contatos {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.contatos a {
+    color: #61dafb;
+    text-decoration: none; 
+    font-size: 1.1rem; 
+    transition: color 0.3s; 
+}
+
+.contatos a:hover {
+    color: #21a1f1; 
+}
+
+.contatos i {
+    margin-right: 8px; 
+}
+
+
+@media (min-width: 588px) and (max-width: 1128px) {
+    #cards-conhecimento {
+        display: grid !important;
+        grid-template-columns: repeat(2, 2fr); 
+        gap: 16px !important;
+    }
+    #cards-conhecimento .card{
+        margin: auto;
+    }
+    #cards-projetos {
+        display: grid !important;
+        grid-template-columns: repeat(2, 2fr) ; 
+        gap: 16px !important; 
+    }
+    #cards-projetos .card{
+        margin: auto;
+    }
+    #cards1, #cards2 {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .cards-pares:hover{
+        margin-top: 80px; 
+        border: 1px solid rgba(20, 115, 167, 0.5);
+        box-shadow: 0 4px 15px rgba(20, 115, 167, 0.5);
+    }
+}
+
+
+@media (min-width: 345px) and (max-width: 588px){
+    #cards1, #cards2 {
+      flex-direction: column !important;
+      align-items: center !important;
+      margin-bottom: 50px;
+    }
+    #cards1 .card, #cards2 .card {
+      width: 100%;
+      max-width: 300px; 
+    }
+  
+
+    #cards-conhecimento{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 1rem;
+    }
+
+    .cards-impares{
+        margin-bottom: 0px;  
+        height: 100%;
+        transition: background-color 0.3s ease, width 0.3s ease;
+    }
+    .cards-pares{
+        margin-top: 0px; 
+        height: 100%;
+        transition: background-color 0.3s ease, width 0.3s ease;
+    }
+    
+    #cards-conhecimento .card:hover{
+         /* margin-top: 0px;  
+         margin-bottom: 0px;  */
+         width: 100%;
+         margin: 0px;
+    }
+    
+} 
