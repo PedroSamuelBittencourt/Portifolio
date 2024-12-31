@@ -24,7 +24,7 @@ body{
 .navbar-nav .link-nav{
     font-size: 1.2rem;
     transition: .3s;
-    color: white;
+    color: #f2f2f2;
 }
 .navbar-nav .link-nav:hover{
     color: #A05CED !important; 
@@ -41,7 +41,7 @@ body{
     flex: 1;
 }  
 .navbar{
-    border-bottom: 1px solid white ;
+    border-bottom: 1px solid #f2f2f2 ;
 }
 
 #logo{
@@ -55,13 +55,12 @@ body{
     height: 500px;
     justify-content: center;
     display: flex;
-    border-bottom: 3px white;
+    border-bottom: 3px #f2f2f2;
 }
 #textos-apresentacao{
     padding: 3%;
-    color: white;
+    color: #f2f2f2;
     height: 100%;
-
 }
 #textos-apresentacao p{
   margin-top: auto;
@@ -69,17 +68,15 @@ body{
 #conteudo-texto-lateral{
     align-items: center;
     margin-top: 15%;
-    color: white;
+    color: #f2f2f2;
 }
-
 #informacoes{
     height: 100%; 
     align-items: center; 
     justify-content: center;
-    
 } 
 #section-projetos h1{
-    color: white!important;
+    color: #f2f2f2!important;
     transition: .3s;
 }
 #section-projetos h1:hover{
@@ -178,8 +175,9 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 0%;
-    height: 100px;
-    background-color: #f2f2f2;
+    height: 70px;
+    padding: 15px 0px 10px 0px;
+    background-color: #E2E3E5;
 }
 
 /*Conhecimentos*/
@@ -285,6 +283,47 @@ footer p {
 
 @media (min-width: 588px) and (max-width: 1128px) {
    
+    #section-content{
+        height: 400px;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+    }
+    #textos-apresentacao{
+        padding: 3%;
+        color: #f2f2f2;
+        height: 100% !important;
+        width: 100%;
+        margin-top: 0%;
+        text-align: center;
+        & h1{
+            width: 100%;
+            text-align: center;
+        }
+        & h3{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    #textos-apresentacao p{
+      margin-top: auto;
+    }
+    #conteudo-texto-lateral{
+        align-items: center;
+        margin-top: 0%;
+        color: #f2f2f2;
+        text-align: center;
+        flex: 1;
+        width: 100% ;
+    }
+    #informacoes{
+        flex: 1;
+        display: flex;
+        width: 100%;
+    } 
+
+
     #cards-conhecimento {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important; 
@@ -305,7 +344,7 @@ footer p {
         flex-direction: column !important;
         flex: 1 !important;
     }
-
+    
     .card {
         margin: 0 auto; /* Centraliza os cards dentro das células */
     }
@@ -318,6 +357,55 @@ footer p {
 
 
 @media (min-width: 345px) and (max-width: 588px){
+
+    #section-content{
+        height: 400px;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+    }
+    #textos-apresentacao{
+        padding: 3%;
+        color: #f2f2f2;
+        height: 100% !important;
+        width: 100%;
+        margin-top: 0%;
+        text-align: center;
+        
+        & h1{
+            width: 100%;
+            text-align: center;
+        }
+        & h3{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    #apresentacao_mobile{
+        display: flex !important;
+    }
+    .apresentacao_desk {
+        display: none !important;
+    }
+    #textos-apresentacao p{
+      margin-top: auto;
+    }
+    #conteudo-texto-lateral{
+        align-items: center;
+        margin-top: 0%;
+        color: #f2f2f2;
+        text-align: center;
+        flex: 1;
+        width: 100% ;
+    }
+    #informacoes{
+        flex: 1;
+        display: flex;
+        width: 100%;
+    } 
+
+
     #cards1, #cards2 {
       flex-direction: column !important;
       align-items: center !important;
