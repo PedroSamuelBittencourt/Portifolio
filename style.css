@@ -20,6 +20,8 @@ body{
     top: 0 !important; /* Alinha ao topo da página */
     z-index: 1000 !important;
     width: 100%;
+    border-bottom: 1px solid #f2f2f2 !important;
+   
 }
 .navbar-nav .link-nav{
     font-size: 1.2rem;
@@ -40,9 +42,21 @@ body{
 #container-links-nav a{
     flex: 1;
 }  
-.navbar{
-    border-bottom: 1px solid #f2f2f2 ;
-}
+.custom-toggler {
+    
+    border: 1px solid #f2f2f2 !important; /* Borda branca */
+    color: #f2f2f2 !important; 
+   
+  }
+ 
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+  }
+  .custom-toggler:hover {
+    background-color: #223372 !important; 
+    color: #212529 !important; 
+  }
+  
 
 #logo{
     margin-left: 3%;
