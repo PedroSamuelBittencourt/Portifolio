@@ -3,7 +3,7 @@
 
 } */
 html {
-    font-size: 15px; /* 1rem será igual a 16px */
+    font-size: 15px; /* 1rem será igual a 15px */
     
 }
 #body{
@@ -16,8 +16,8 @@ body{
   
 }
 .navbar{
-    position: fixed !important; /* Fixa a navbar no topo */
-    top: 0 !important; /* Alinha ao topo da página */
+    position: fixed !important; 
+    top: 0 !important; 
     z-index: 1000 !important;
     width: 100%;
     border-bottom: 1px solid #f2f2f2 !important;
@@ -27,6 +27,9 @@ body{
     font-size: 1.2rem;
     transition: .3s;
     color: #f2f2f2;
+    padding: 0px;
+    flex: 1;
+    
 }
 .navbar-nav .link-nav:hover{
     color: #A05CED !important; 
@@ -38,21 +41,26 @@ body{
 #container-links-nav{
     display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
 }  
-#container-links-nav a{
+ 
+.tamanhoA{
     flex: 1;
-}  
+    width: 100%;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center;
+}
 .custom-toggler {
-    
-    border: 1px solid #f2f2f2 !important; /* Borda branca */
+    border: 1px solid #f2f2f2 !important; 
     color: #f2f2f2 !important; 
-   
   }
  
-  .custom-toggler .navbar-toggler-icon {
+.custom-toggler .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 viewBox%3D%220 0 30 30%22%3E%3Cpath stroke%3D%22white%22 stroke-width%3D%222%22 d%3D%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
   }
-  .custom-toggler:hover {
+.custom-toggler:hover {
     background-color: #223372 !important; 
     color: #212529 !important; 
   }
@@ -193,7 +201,6 @@ body{
     padding: 15px 0px 10px 0px;
     background-color: #E2E3E5;
 }
-
 /*Conhecimentos*/
 
 #conhecimento{
@@ -244,6 +251,9 @@ body{
     height: 100%;
     transition: background-color 0.3s ease, width 0.3s ease;
 }
+.cards-pares:hover p{
+    height: 20%;
+}
 
 .cards-pares:hover{
     margin-top: 0px; 
@@ -259,39 +269,90 @@ body{
 
 /* footer */
 footer {
-    background-color: #282c34; 
-    color: #f2f2f2; 
-    padding: 20px; 
-    text-align: center; 
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    font-style: normal; 
+    background-color: #282c34; /* Fundo escuro */
+    color: #f2f2f2; /* Texto claro */
+    padding: 20px 10px; /* Espaçamento interno reduzido para mobile */
+    text-align: center; /* Centraliza o conteúdo */
+    font-family: "Poppins", sans-serif; /* Fonte moderna */
+    font-weight: 300; /* Peso da fonte */
+    border-top: 2px solid #61dafb; /* Linha superior decorativa */
 }
 
 footer p {
-    margin-bottom: 15px; 
-    font-size: 1rem; 
+    margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+    font-size: 1rem; /* Tamanho do texto reduzido para mobile */
+    color: #f2f2f2; /* Cor do texto */
 }
 
 .contatos {
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza os links */
+    gap: 15px; /* Espaçamento entre os links reduzido para mobile */
+    flex-wrap: wrap; /* Quebra os links em várias linhas se necessário */
 }
 
 .contatos a {
-    color: #61dafb;
+    color: #61dafb; 
     text-decoration: none; 
-    font-size: 1.1rem; 
-    transition: color 0.3s; 
+    font-size: 1rem; 
+    transition: all 0.3s ease; 
+    display: flex;  
+    align-items: center; 
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    background-color: rgba(97, 218, 251, 0.1); 
 }
 
 .contatos a:hover {
     color: #21a1f1; 
+    background-color: rgba(33, 161, 241, 0.2); 
+    transform: translateY(-3px); 
 }
 
 .contatos i {
     margin-right: 8px; 
+    font-size: 1rem;
+}
+
+/* Media Queries para ajustes em telas menores */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 0.9rem; 
+    }
+
+    .contatos {
+        gap: 10px; 
+    }
+
+    .contatos a {
+        font-size: 0.9rem; 
+        padding: 6px 10px; 
+    }
+
+    .contatos i {
+        font-size: 0.9rem; /
+    }
+}
+
+@media (max-width: 480px) {
+    footer p {
+        font-size: 0.8rem; 
+    }
+
+    .contatos {
+        flex-direction: column; 
+        gap: 8px; 
+    }
+
+    .contatos a {
+        font-size: 0.8rem; 
+        padding: 5px 8px; 
+        justify-content: center; 
+    }
+
+    .contatos i {
+        font-size: 0.8rem; 
+    }
 }
 
 
@@ -360,12 +421,15 @@ footer p {
     }
     
     .card {
-        margin: 0 auto; /* Centraliza os cards dentro das células */
+        margin: 0 auto; 
     }
     .cards-pares:hover{
         margin-top: 80px; 
         border: 1px solid rgba(20, 115, 167, 0.5);
         box-shadow: 0 4px 15px rgba(20, 115, 167, 0.5);
+    }
+    .cards-impares p{
+        background-color: #212529bf;
     }
 }
 
@@ -418,8 +482,6 @@ footer p {
         display: flex;
         width: 100%;
     } 
-
-
     #cards1, #cards2 {
       flex-direction: column !important;
       align-items: center !important;
@@ -429,8 +491,6 @@ footer p {
       width: 100%;
       max-width: 300px; 
     }
-  
-
     #cards-conhecimento{
         display: flex !important;
         flex-direction: column !important;
@@ -448,12 +508,15 @@ footer p {
         height: 100%;
         transition: background-color 0.3s ease, width 0.3s ease;
     }
-    
+    .cards-impares p{
+        background-color: #212529bf;
+    }
     #cards-conhecimento .card:hover{
-         /* margin-top: 0px;  
-         margin-bottom: 0px;  */
+         
          width: 100%;
          margin: 0px;
     }
+ 
+  
     
 } 
