@@ -269,26 +269,26 @@ body{
 
 /* footer */
 footer {
-    background-color: #282c34; /* Fundo escuro */
-    color: #f2f2f2; /* Texto claro */
-    padding: 20px 10px; /* Espaçamento interno reduzido para mobile */
-    text-align: center; /* Centraliza o conteúdo */
-    font-family: "Poppins", sans-serif; /* Fonte moderna */
-    font-weight: 300; /* Peso da fonte */
-    border-top: 2px solid #61dafb; /* Linha superior decorativa */
+    background-color: #282c34; 
+    color: #f2f2f2; 
+    padding: 20px 10px; 
+    text-align: center; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 300; 
+    border-top: 2px solid #61dafb; 
 }
 
 footer p {
-    margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
-    font-size: 1rem; /* Tamanho do texto reduzido para mobile */
-    color: #f2f2f2; /* Cor do texto */
+    margin-bottom: 15px; 
+    font-size: 1rem; 
+    color: #f2f2f2; 
 }
 
 .contatos {
-    display: flex; /* Layout flexível */
-    justify-content: center; /* Centraliza os links */
-    gap: 15px; /* Espaçamento entre os links reduzido para mobile */
-    flex-wrap: wrap; /* Quebra os links em várias linhas se necessário */
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+    flex-wrap: wrap; 
 }
 
 .contatos a {
@@ -314,7 +314,7 @@ footer p {
     font-size: 1rem;
 }
 
-/* Media Queries para ajustes em telas menores */
+
 @media (max-width: 768px) {
     footer p {
         font-size: 0.9rem; 
@@ -355,7 +355,21 @@ footer p {
     }
 }
 
+@media (max-width: 991px) {
+    #navbarNavAltMarkup{
+        margin-left: 0px;
+    }
+    .tamanhoA{
+        width: 50%;
+        text-align: left;
+    }
+    #container-links-nav {
+        align-self: flex-start;
+        display: block !important;
+    }
 
+    
+}
 @media (min-width: 588px) and (max-width: 1128px) {
    
     #section-content{
