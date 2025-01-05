@@ -4,43 +4,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sobre Mim - Pedro Bittencourt</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="sobreMim.css">
+  <!--bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- icon -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  
+  <!-- fontsGoogle -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Nav -->
-  <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-white" id="logo" href="#">Pedro Bittencourt</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <!-- Nav -->
+ <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" id="logo" href="index.html">Home</a>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse col-10 container-fluid" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-flex" id="container-links-nav">
-          <a class="nav-link link-nav" id="quemSouEu" href="#">Quem sou eu</a>
-          <a class="nav-link link-nav" href="#section-projetos">Projetos</a>
-          <a class="nav-link link-nav" href="#">Conhecimento</a>
-          <a class="nav-link link-nav" href="#">Contatos</a>
-        </div>
+    <div class="collapse navbar-collapse col-10 container-fluid" id="navbarNavAltMarkup">
+      <div class="navbar-nav d-flex" id="container-links-nav">
+        <div class="tamanhoA"><a class="nav-link link-nav" href="">Sobre mim</a></div>
+        <div class="tamanhoA"><a class="nav-link link-nav" href="index.html">Projetos</a></div>
+        <div class="tamanhoA"><a class="nav-link link-nav" href="index.html">Tecnologias</a></div>
+        <div class="tamanhoA"><a class="nav-link link-nav" href="#rodape">Contatos/Github</a></div>
       </div>
     </div>
-  </nav>
-  
-  <section>
+  </div>
+</nav>
     
-  </section>
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+<section id="cards-skills">
+  <h1 class="mb-4">O que você deseja saber sobre mim?</h1>
+  <div id="cards-inicio">
+    <div class="card text-bg-dark mb-3 h-100 w-50 card-left" style="max-width: 18rem;">
+      <div class="card-header"><h5>Soft Skills</h5></div>
+      <div class="card-body">
+        <h2 class="card-title">Quem eu sou</h2>
+        <p class="card-text w-90 p-3">Um breve resumo sobre mim</p>
+      </div>
+    </div>
+    <div class="card text-bg-dark mb-3 h-100 w-50 card-right" style="max-width: 18rem;">
+      <div class="card-header"><h5>Hard Skills</h5></div>
+      <div class="card-body">
+        <h2 class="card-title">Onde estudei</h2>
+        <p class="card-text w-90 p-3">Um breve resumo da minha trajetória acadêmica.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+  <section>
+    <h1>Onde estudei:</h1>
+    <div class="estudos">
+      <div class="textos">
+        <h2>Fatec - Guaratinguetá</h2>
+        <p>Estou cursando Gestão da Tecnologia da Informação na instituição Fatec - Guaratinguetá. O curso aborda disciplinas das áreas de informática e gestão, que têm como base a matemática. Dentro de computação, o estudante aprende linguagem de programação, desenvolvimento de softwares e implementação de sistema de banco de dados, entre outros. Já no campo gerencial, estuda administração, contabilidade, finanças, economia, negócios, marketing, gestão de pessoas e gestão da produção, por exemplo.</p>
+        <span><a href="https://www.cps.sp.gov.br/cursos-fatec/gestao-da-tecnologia-da-informacao/">confira mais sobre</a></span>
+      </div>
+      <img src="imagens/Fatec.jpg" alt="">
+      <span class="link_mobile"><a href="">confira mais sobre</a></span>
+    </div>
+
+    <div class="estudos">
+      <div class="textos">
+        <h2>Etec - Guaratinguetá</h2>
+        <p>Cheguei a cursar desenvolvimento de sistemas em 2020, fiz 1 ano desse curso tecnico e acabei trancando por conta da pandemia, lá aprendi meus primeiros conceitos sobre programação, como lógica em programação, estilização de softwares, algoritmos, fluxo de dados, entre outros.</p>
+        <span><a href="https://www.cps.sp.gov.br/cursos-etec/desenvolvimento-de-sistemas/">confira mais sobre</a></span>
+       </div>
+       <img src="imagens/etec.jpg" alt="">
+       <span class="link_mobile"><a href="">confira mais sobre</a></span>
+    </div>
+    
+    <div class="estudos">
+      <div class="textos">
+        <h2>Fatecoins</h2>
+        <p>Uma plataforma online criada pelo Professor Doutor Leandro Guarino, oferece formação gratuita e completa de desenvolvimento de software com uma base sólida dos conceitos necessários para a carreira, e com a seriedade que a carreira de Dev necessita, que eu acabei usando para complementar as aulas da faculdade e me aprofundar em conceitos importantes para a carreira.</p>
+        <span><a href="">confira mais sobre</a></span>
+      </div>
+      <img src="imagens/fatecoins.jpg" alt="">
+      <span class="link_mobile"><a href="https://www.fatecoins.com.br/">confira mais sobre</a></span>
+    </div>
+    <div class="estudos">
+     
+      <div class="textos">
+        <h2>Curso em vídeo</h2>
+        <p>Um projeto focado em ensinar tecnologia à distância que conta com milhares de alunos inscritos e uma grande quantidade de material gratuito. Nele eu pude aprofundar meus conhecimentos em HTML&CSS e JavaScript, principais tecnologias que uso no dia a dia.</p>
+        <span><a href="">confira mais sobre</a></span>
+      </div>
+      <img src="imagens/cursoV.jpg" alt="">
+      <span class="link_mobile"><a href="https://www.cursoemvideo.com/sobre/">confira mais sobre</a></span>
+    </div>
+  </section>
+
+  <section id="sobreMim" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <div id="textosSobreMim" class="col-md-6">
+                <h1 class="display-4 fw-bold mb-4">Sou o Pedro Samuel Rodrigues Bittencourt</h1>
+                <h2 class="lead mb-4">Resido em Guaratinguetá, nasci em 08/07/2003, sou apaixonado por tecnologia e estou me aprimorando como Front-end Junior.</h2>
+                <h2 class="fw-bold mb-3">Eu sou alguém que:</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="fa-solid fa-check  me-2"></i>
+                        Tem facilidade em estabelecer diálogos e transmitir ideias de forma clara e eficaz.
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-check  me-2"></i>
+                        Tem habilidade em absorver e aplicar rapidamente novas informações.
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-check  me-2"></i>
+                        Sou comprometido em identificar e implementar soluções antes que os desafios se tornem críticos.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Minha Foto -->
+            <div id="minha_foto" class="col-md-6 text-center">
+                <img src="imagens/fotoTerno.jpeg" alt="Foto de Pedro Samuel" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer id="rodape">
+    <p>Você pode entrar em contato comigo ou ver os códigos dos projetos através desses links:</p>
+     <div class="contatos">
+      <a href="https://wa.me/5512988124724?text=Olá,%20vi%20o%20seu%20repositório%20e%20me%20interessei!" target="_blank"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+       <a href="https://github.com/PedroSamuelBittencourt" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+       <a href="https://www.linkedin.com/in/pedro-samuel-rodrigues-bittencourt-1a6a022b7/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+       <a href="mailto:bittencourtpedro2003@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> E-mail</a>
+     </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+ <!-- icos -->
+ <script src="https://kit.fontawesome.com/3a136bbce7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

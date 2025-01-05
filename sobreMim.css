@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: 15px;
+}
+#cards-skills{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+}
+#cards-inicio{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    height: 20rem;
+}
+.card p {
+    font-size: 1.4rem !important;
+    top: 50%;
+}
+.card:hover{
+    transform: scale(1.1);
+  
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.card-left {
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.card-right {
+    animation: slideInFromRight 2s ease-out forwards;
+}
+.card-left, .card-right {
+    animation-fill-mode: forwards;
+    transition: all 0.3s ease-in-out;
+}
+.card-left:hover, .card-right:hover {
+    box-shadow: 0 0 10px #34495e;
+    transform: scale(1.05);
+}
+section {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #E2E3E5;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.estudos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.estudos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.estudos img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.estudos h2 {
+    color: #555;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.estudos p {
+    color: #777;
+    font-size: 1.1em;
+    line-height: 1.6;
+    width: 95%;
+}
+.link_mobile{
+    display: none;
+}
+/* .estudos:nth-child(odd) {
+    flex-direction: row-reverse;
+}  */
+
+.estudos:nth-child(odd) img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+.estudos {
+    flex-direction: column;
+    text-align: center;
+}
+
+.estudos img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 20px 0;
+}
+
+.estudos:nth-child(odd) {
+    flex-direction: column;
+}
+
+.estudos:nth-child(odd) img {
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.estudos h2 {
+    font-size: 1.5em;
+}
+
+.estudos p {
+    font-size: 1em;
+}
+#textosSobreMim h1 {
+    font-size: 2rem;
+}
+
+#textosSobreMim h2 {
+    font-size: 1.25rem;
+}
+
+#textosSobreMim li {
+    font-size: 1rem;
+}
+
+#minha_foto img {
+    max-width: 80%;
+}
+}
+
+@media (max-width: 480px) {
+h1 {
+    font-size: 1.8em;
+}
+
+.estudos h2 {
+    font-size: 1.3em;
+}
+
+.estudos p {
+    font-size: 0.9em;
+}
+
+}
+#sobreMim {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#textosSobreMim h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+#textosSobreMim h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+}
+
+#textosSobreMim ul {
+    padding-left: 0;
+}
+
+#textosSobreMim li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.fa-check {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Estilos da Foto */
+#minha_foto img {
+    border: 5px solid #2c3e50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#minha_foto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+

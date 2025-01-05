@@ -21,15 +21,14 @@ body{
     z-index: 1000 !important;
     width: 100%;
     border-bottom: 1px solid #f2f2f2 !important;
-   
 }
 .navbar-nav .link-nav{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: .3s;
     color: #f2f2f2;
     padding: 0px;
     flex: 1;
-    
+    width: 55%;
 }
 .navbar-nav .link-nav:hover{
     color: #A05CED !important; 
@@ -372,6 +371,13 @@ footer p {
 }
 @media (min-width: 588px) and (max-width: 1128px) {
    
+    .tamanhoA{
+        margin-left: 3%;
+    }
+    .navbar-nav .link-nav{
+        width: 80% !important;
+        
+    }
     #section-content{
         height: 400px;
         display: flex !important;
