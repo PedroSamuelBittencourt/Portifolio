@@ -25,10 +25,20 @@ html{
 .card p {
     font-size: 1.4rem !important;
     top: 50%;
+   
 }
+
 .card:hover{
     transform: scale(1.1);
   
+}
+.p-mobile{
+    display: none;
+}
+.card a{
+    text-decoration: none !important; 
+    color: inherit !important; 
+    cursor: pointer !important;
 }
 @keyframes slideInFromLeft {
     0% {
@@ -60,12 +70,22 @@ html{
 }
 .card-left, .card-right {
     animation-fill-mode: forwards;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #E2E3E5 !important;
+    border: 1px solid #3333339c!important;
+    color: #1F2326 !important;
 }
 .card-left:hover, .card-right:hover {
     box-shadow: 0 0 10px #34495e;
     transform: scale(1.05);
+    background-color: #1D2024 !important;
 }
+.card-left:hover{
+   color: #8953D5!important;
+}
+.card-right:hover{
+    color: #17948D!important;
+ }
 section {
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -134,69 +154,6 @@ h1 {
     margin-left: 20px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-.estudos {
-    flex-direction: column;
-    text-align: center;
-}
-
-.estudos img {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 0 20px 0;
-}
-
-.estudos:nth-child(odd) {
-    flex-direction: column;
-}
-
-.estudos:nth-child(odd) img {
-    margin: 0 0 20px 0;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-.estudos h2 {
-    font-size: 1.5em;
-}
-
-.estudos p {
-    font-size: 1em;
-}
-#textosSobreMim h1 {
-    font-size: 2rem;
-}
-
-#textosSobreMim h2 {
-    font-size: 1.25rem;
-}
-
-#textosSobreMim li {
-    font-size: 1rem;
-}
-
-#minha_foto img {
-    max-width: 80%;
-}
-}
-
-@media (max-width: 480px) {
-h1 {
-    font-size: 1.8em;
-}
-
-.estudos h2 {
-    font-size: 1.3em;
-}
-
-.estudos p {
-    font-size: 0.9em;
-}
-
-}
 #sobreMim {
     background-color: #ffffff;
     padding: 4rem 0;
@@ -249,3 +206,89 @@ h1 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+
+@media (max-width: 1024px) {
+    .card-text{
+        display: none;
+    }
+    .p-mobile{
+        display: flex;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .estudos {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .estudos img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 0 20px 0;
+    }
+    
+    .estudos:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    .estudos:nth-child(odd) img {
+        margin: 0 0 20px 0;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .estudos h2 {
+        font-size: 1.5em;
+    }
+    
+    .estudos p {
+        font-size: 1em;
+    }
+    #textosSobreMim h1 {
+        font-size: 2rem;
+    }
+    
+    #textosSobreMim h2 {
+        font-size: 1.25rem;
+    }
+    
+    #textosSobreMim li {
+        font-size: 1rem;
+    }
+    
+    #minha_foto img {
+        max-width: 80%;
+    }
+
+}
+    
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .estudos h2 {
+        font-size: 1.3em;
+    }
+    
+    .estudos p {
+        font-size: 0.9em;
+    }
+    #cards-inicio {
+        height: 17rem !important;
+        padding: 15px;
+        gap: 1%;
+    }
+    .card p {
+        font-size: 1rem !important;
+        top: 50%;
+        margin-top: 18px;
+        width: 90%;
+    }
+}
